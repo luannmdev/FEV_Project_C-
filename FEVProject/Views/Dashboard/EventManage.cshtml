@@ -1,0 +1,101 @@
+﻿@model Tuple<ICollection<Event>>
+@{ 
+    Layout = "_Layout";
+    ViewData["Title"] = "Event";
+    int count = 0;
+    string me = Context.Session.GetString("id");
+}
+<div class="main main-raised">
+    <div class="profile-content">
+        <div class="container">
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="profile">
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto">
+                            <form class="form" method="post" asp-action="EventManage">
+                                <h2 class="description text-center">Event Management</h2>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-5 col-sm-offset-3 mr-auto ml-auto">
+                                            <div id="imaginary_container">
+                                                <div class="input-group stylish-input-group">
+                                                    <input name="search" type="text" class="form-control" placeholder="Search">
+                                                    <span class="input-group-addon">
+                                                        <button type="submit">
+                                                            <span class="glyphicon glyphicon-search"><i class="material-icons">search</i></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a asp-action="AddNewEvent" style="border: solid #ba68c8 1px" class="btn btn-primary btn-link btn-wd btn-lg">
+                                                Add New Event
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 ml-auto mr-auto">
+                                            <div class="table-responsive-xl">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">#</th>
+                                                            <th class="text-left">Title</th>
+                                                            <th class="text-left">Create By</th>
+                                                            <th class="text-center">Done</th>
+                                                            <th class="text-center">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>                                                       
+                                                        @foreach (var e in Model.Item1)
+                                                        {
+                                                            count++;
+                                                            <tr>
+                                                                <td class="text-center">@count</td>
+                                                                <td class="text-left">@e.name</td>
+                                                                <td class="text-left">@e.username</td>
+                                                                <td class="td-actions text-center">
+                                                                    @if (me == e.username)
+                                                                    {
+                                                                        <a asp-action="DoneEvent" asp-route-eventId="@e.eventId" rel="tooltip" class="btn btn-@(e.done ? "info" : "danger") btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                                                                            <i class="material-icons">@(e.done ? "check" : "clear")</i>
+                                                                        </a>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <button type="button" rel="tooltip" class="btn btn-@(e.done ? "info" : "danger") btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                                                                            <i class="material-icons">@(e.done ? "check" : "clear")</i>
+                                                                        </button>
+                                                                    }
+                                                                </td>
+                                                                <td class="td-actions text-center">
+                                                                    @if (me == e.username)
+                                                                    {
+
+                                                                        <a asp-action="EditEvent" asp-route-eventId="@e.eventId" rel="tooltip" class="btn btn-info btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                                                                            <i class="material-icons">edit</i>
+                                                                        </a>
+                                                                        <a asp-action="DeleteEvent" asp-route-eventId="@e.eventId" rel="tooltip" class="btn btn-success btn-link btn-just-icon btn-sm" data-original-title="" title="" style="color: #a8a8a8">
+                                                                            <i class="material-icons">delete_outline</i>
+                                                                        </a>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <a> Not allowed </a>
+                                                                    }
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+﻿@model Tuple<ICollection<Team>, Event>
+@{ 
+    Layout = "_Layout";
+    ViewData["Title"] = "Event Detail";
+    int count = 0;
+}
+<div class="main main-raised">
+    <div class="profile-content">
+        <div class="container">
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="profile">
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto">
+                            <form class="form" method="post" asp-action="EditEvent">
+                                <h2 class="description text-center">Event Detail</h2>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-5 col-sm-offset-3 mr-auto ml-auto">
+                                            <div id="imaginary_container">
+                                                <div class="card-body">
+                                                    <input type="hidden" name="eventId" value="@Model.Item2.eventId"/>
+                                                    <div class="input-group row">
+                                                        <div class="input-group-prepend col-4">
+                                                            <span class="input-group-text">
+                                                                Title
+                                                            </span>
+                                                        </div>
+                                                        <input name="title" style="background-color: transparent;" type="text" class="form-control col-auto" placeholder="Title" value="@Model.Item2.name" />
+                                                    </div>
+                                                    <div class="input-group row">
+                                                        <div class="input-group-prepend col-4">
+                                                            <span class="input-group-text">
+                                                                Description
+                                                            </span>
+                                                        </div>
+                                                        <textarea name="description" style="background-color: transparent;" type="text" class="form-control col-auto" placeholder="Description">@Model.Item2.description</textarea>
+                                                    </div>
+                                                    <style>
+                                                        ul {
+                                                            list-style-type: none;
+                                                        }
+                                                    </style>
+                                                    <div asp-validation-summary="All" style="color:purple"></div>
+                                                    <div class="footer text-center">
+                                                        <button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a asp-action="AddNewTeam" asp-route-eventId="@Model.Item2.eventId" style="border: solid #ba68c8 1px" class="btn btn-primary btn-link btn-wd btn-lg">
+                                                Add New Team
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 ml-auto mr-auto">
+                                            <div class="table-responsive-xl">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">#</th>
+                                                            <th class="text-left">Team Name</th>
+                                                            <th class="text-left">Description</th>                                                            
+                                                            <th class="text-center">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach (var e in Model.Item1)
+                                                        {
+                                                            count++;
+                                                            <tr>
+                                                                <td class="text-center">@count</td>
+                                                                <td class="text-left">@e.name</td>
+                                                                <td class="text-left">@e.description</td>                                                                
+                                                                <td class="td-actions text-center">
+                                                                    <a asp-action="EditTeam" asp-route-teamId="@e.teamId" rel="tooltip" class="btn btn-info btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                                                                        <i class="material-icons">edit</i>
+                                                                    </a>
+                                                                    <a asp-action="DeleteTeam" asp-route-teamId="@e.teamId" rel="tooltip" class="btn btn-success btn-link btn-just-icon btn-sm" data-original-title="" title="" style="color: #a8a8a8">
+                                                                        <i class="material-icons">delete_outline</i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

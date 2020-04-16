@@ -1,0 +1,51 @@
+﻿@model Tuple<AddNewTeamModel, int>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Team";
+}
+<div class="main main-raised">
+    <div class="profile-content">
+        <div class="container">
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="profile">
+                    <div class="row">
+                        <div class="col-md-5 ml-auto mr-auto">
+                            <form class="form" method="post" asp-action="AddNewTeam">
+                                <p class="description text-center">Add new Team</p>
+                                <div class="card-body">
+                                    <input type="hidden" name="eventId" value="@Model.Item2" />
+                                    <div class="input-group row">
+                                        <div class="input-group-prepend col-4">
+                                            <span class="input-group-text">
+                                                Name
+                                            </span>
+                                        </div>
+                                        <input name="name" style="background-color: transparent;" type="text" class="form-control col-auto" placeholder="Title" value="@Model.Item1?.name" />
+                                    </div>
+                                    <div class="input-group row">
+                                        <div class="input-group-prepend col-4">
+                                            <span class="input-group-text">
+                                                Description
+                                            </span>
+                                        </div>
+                                        <textarea name="description" style="background-color: transparent;" type="text" class="form-control col-auto" placeholder="Description">@Model.Item1?.description</textarea>
+                                    </div>
+                                </div>
+                                <style>
+                                    ul {
+                                        list-style-type: none;
+                                    }
+                                </style>
+                                <div asp-validation-summary="All" style="color:purple"></div>
+                                <div class="footer text-center">
+                                    <button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Add</button>
+                                    <a asp-action="EditEvent" asp-route-eventId="@Model.Item2" class="btn btn-primary btn-link btn-wd btn-lg">Cancel</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

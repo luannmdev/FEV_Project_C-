@@ -1,0 +1,99 @@
+E:\C#Projects\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.deps.json
+E:\C#Projects\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.runtimeconfig.json
+E:\C#Projects\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.runtimeconfig.dev.json
+E:\C#Projects\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.dll
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.csprojAssemblyReference.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.csproj.CoreCompileInputs.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorAssemblyInfo.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorAssemblyInfo.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.AssemblyInfoInputs.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.AssemblyInfo.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.TagHelpers.input.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.TagHelpers.output.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorCoreGenerate.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorTargetAssemblyInfo.cache
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorTargetAssemblyInfo.cs
+E:\C#Projects\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.pdb
+E:\C#Projects\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.Views.dll
+E:\C#Projects\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.Views.pdb
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.Views.pdb
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.dll
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.pdb
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.csproj.CopyComplete
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\_Layout.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Index.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_Layout.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Events\Create.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Events\Delete.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Events\Details.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Events\Edit.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Events\Index.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_EventTag.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Profile.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_ProfileViewForm.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_ProfileEditForm.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_PasswordChangeForm.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EventDetail.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_TeamMemberInf.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_TeamDetail.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_TaskRow.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddMemToTeam.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_AddTeamMemRow.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddTask.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EditTask.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EventManage.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddNewEvent.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EditEvent.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddNewTeam.g.cshtml.cs
+E:\C#Projects\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EditTeam.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.deps.json
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.runtimeconfig.json
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.runtimeconfig.dev.json
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.dll
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.pdb
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.Views.dll
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\bin\Debug\netcoreapp2.1\FEVProject.Views.pdb
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.csprojAssemblyReference.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.csproj.CoreCompileInputs.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorAssemblyInfo.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorAssemblyInfo.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.AssemblyInfoInputs.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.AssemblyInfo.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.TagHelpers.input.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.TagHelpers.output.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorCoreGenerate.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddMemToTeam.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddNewEvent.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddNewTeam.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\AddTask.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EditEvent.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EditTask.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EditTeam.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EventDetail.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\EventManage.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Index.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Profile.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_AddTeamMemRow.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_EventTag.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_Layout.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_PasswordChangeForm.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_ProfileEditForm.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_ProfileViewForm.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_TaskRow.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_TeamDetail.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\_TeamMemberInf.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\_Layout.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorTargetAssemblyInfo.cache
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.RazorTargetAssemblyInfo.cs
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.Views.pdb
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.dll
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.pdb
+D:\Study-code\FEVProject\project code\FEVProject\FEVProject\obj\Debug\netcoreapp2.1\FEVProject.csproj.CopyComplete

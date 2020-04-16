@@ -1,0 +1,10 @@
+﻿@model Tuple<User, int, int>
+<tr>
+    <td class="text-center">@Model.Item2</td>
+    <td class="text-left">@Model.Item1.username</td>
+    <td class="td-actions text-center">
+        <button type="button" rel="tooltip" class="btn btn-info btn-link btn-just-icon btn-sm" data-original-title="" title="">
+            <a asp-action="AddMemToTeam" asp-route-id="@Model.Item3" asp-route-username="@Model.Item1.username"><i class="material-icons">person_add</i></a>
+        </button>
+    </td>
+</tr>

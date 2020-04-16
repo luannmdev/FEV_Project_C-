@@ -1,0 +1,55 @@
+﻿@model Tuple<FEVProject.Models.Task, int, int>
+@{ 
+    string me = ViewData["Me"] as string;
+}
+<tr>
+    <td class="text-center">@Model.Item2</td>
+    <td class="text-left">@Model.Item1.owner</td>
+    <td class="text-left">@Model.Item1.receiver</td>
+    <td>@Model.Item1.startDate</td>
+    <td>@Model.Item1.endDate</td>
+    <td class="text-left">@Model.Item1.description</td>
+    <td>
+        @if (me == @Model.Item1.receiver && !Model.Item1.done)
+        {
+            <a asp-action="AcceptTask" asp-route-id="@Model.Item1.taskId" asp-route-eventId="@Model.Item3" rel="tooltip" class="btn btn-@(@Model.Item1.accepted?"info":"danger") btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                <i class="material-icons">@(@Model.Item1.accepted ? "check" : "clear")</i>
+            </a>
+        }
+        else
+        {
+            <button type="button" rel="tooltip" class="btn btn-@(@Model.Item1.accepted?"info":"danger") btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                <i class="material-icons">@(@Model.Item1.accepted ? "check" : "clear")</i>
+            </button>
+        }
+    </td>
+    <td>
+        @if (me == @Model.Item1.owner)
+        {
+        <a asp-action="DoneTask" asp-route-id="@Model.Item1.taskId" asp-route-eventId="@Model.Item3" rel="tooltip" class="btn btn-@(@Model.Item1.done?"info":"danger") btn-link btn-just-icon btn-sm" data-original-title="" title="">
+            <i class="material-icons">@(@Model.Item1.done ? "check" : "clear")</i>
+        </a>
+        }
+        else
+        {
+            <button type="button" rel="tooltip" class="btn btn-@(@Model.Item1.done?"info":"danger") btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                <i class="material-icons">@(@Model.Item1.done ? "check" : "clear")</i>
+            </button>
+        }        
+    </td>
+    <td class="td-actions text-right">
+        @if (me == @Model.Item1.owner)
+        {
+            <a asp-action="EditTask" asp-route-id="@Model.Item1.taskId" asp-route-eventId="@Model.Item3" rel="tooltip" class="btn btn-info btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                <i class="material-icons">edit</i>
+            </a>
+            <a asp-action="DeleteTask" asp-route-id="@Model.Item1.taskId" asp-route-eventId="@Model.Item3" rel="tooltip" class="btn btn-success btn-link btn-just-icon btn-sm" data-original-title="" title="" style="color: #a8a8a8">
+                <i class="material-icons">delete_outline</i>
+            </a>
+        }
+        else
+        {
+            <a>Not allowed</a>
+        }
+    </td>
+</tr>

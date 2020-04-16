@@ -1,0 +1,53 @@
+﻿@model User;
+@{
+    ViewData["Title"] = "Login";
+    ViewData["Type"] = "login";
+    Layout = "_Layout";
+}
+
+<div class="page-header header-filter" style="background-image: url('/assets/img/fev_background/DSC07601-2.jpg'); background-size: cover; background-position: center bottom;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                <div class="card card-login">
+                    <form class="form" method="POST" asp-action="Login">
+                        <div class="card-header card-header-primary text-center">
+                            <h4 class="card-title">Login</h4>
+                            <div class="social-line">
+                                <img src="/assets/img/fev_logo/LOGO-FEV.jpg" class="btn btn-just-icon btn-link" style="width: 120px;height: 100%;" disable />
+                            </div>
+                        </div>
+                        <p class="description text-center">There are no resistor, we are sorry!</p>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">face</i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="User Name." asp-for="username">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Password." asp-for="password">
+                            </div>
+                            <style>
+                                ul {
+                                    list-style-type: none;
+                                }
+                            </style>
+                            <strong><div asp-validation-summary="All" style="color:purple"></div></strong>
+                        </div>
+                        <div class="footer text-center">                            
+                            <button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Lets Go</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,17 @@
+﻿@model Event
+
+<div class="col-md-6">
+    <div class="card card-raised card-background" style="background-image: url('/assets/img/fev_event/DSC00684-10.jpg'); background-size: cover">
+        <div class="layer-black"></div>
+        <div class="card-body" style="z-index: 1;">
+            <h6 class="card-category text-info" style="color: hsla(0,0%,100%,.7)!important;">Business</h6>
+            <h3 class="card-title" style="color: wheat;">@Model.name</h3>
+            <p class="card-description" style="color: #fff !important;">
+                <!-- Content Here -->
+            </p>
+            <a asp-action="EventDetail" asp-route-id="@Model.eventId" class="btn btn-warning btn-round">
+                <i class="material-icons">format_align_left</i> Read More
+            </a>
+        </div>
+    </div>
+</div>

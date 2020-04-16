@@ -1,0 +1,122 @@
+﻿@model EventDetailViewModel
+@{ 
+    Layout = "_Layout";
+    ViewData["Title"] = "Event";
+    string me = ViewData["Me"] as string;
+}
+<div class="main main-raised">
+    <div class="container">
+        <div class="section">
+            <h3 class="title text-center">Event</h3>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-plain card-blog">
+                        <div class="card-header card-header-image">
+                            <a href="#pablo">
+                                <img class="img img-raised" src="/assets/img/fev_event/DSC00703-8.jpg">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#pablo">@Model.Event.name</a>
+                            </h4>
+                            <h6 class="card-title">
+                                <a href="#pablo">Create By: @Model.Event.username</a>
+                            </h6>
+                            <p class="card-description">
+                                @Model.Event.description
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            =========================================================
+            MENU FIRST CLASS
+            =========================================================
+            -->
+            <div class="row">
+                <div class="col-md-12 ml-auto mr-auto text-center">
+                    <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active show" href="#members" role="tab" data-toggle="tab">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#teamlist" role="tab" data-toggle="tab">Teams List</a>
+                        </li>
+                    </ul>
+                    <!--
+                    =========================================================
+                    CONTENT FIRST CLASS
+                    =========================================================
+                    -->
+                    <div class="tab-content tab-space">
+                        <div class="tab-pane active show" id="members">
+                            <div class="row">                                                                                                                                                
+                                @foreach (var p in Model.Users)
+                                {                                   
+                                   @Html.Partial("_TeamMemberInf", new Tuple<User, string, string, bool>(p, "All", Model.Event.eventId + "", me == Model.Event.username));                                        
+                                }                                                                                                    
+                            </div>
+                        </div>
+                        <!--
+                        =========================================================
+                        CONTENT FIRST CLASS :: MENU SECOND CLASS
+                        =========================================================
+                        -->
+                        <div class="tab-pane" id="teamlist">
+                            <div class="row">
+                                <div class="col-md-12 ml-auto mr-auto text-center">
+                                    <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
+                                        @{
+                                            bool first = true;
+                                        }
+                                        @foreach (var t in Model.Teams)
+                                        {
+                                            if (first)
+                                            {
+                                                <li class="nav-item">
+                                                    <a class="nav-link active show" href="@("#team" + t.teamId)" role="tab" data-toggle="tab">@t.name</a>
+                                                </li>
+                                                first = false;
+                                            }
+                                            else
+                                            {
+                                                <li class="nav-item">
+                                                    <a class="nav-link " href="@("#team" + t.teamId)" role="tab" data-toggle="tab">@t.name</a>
+                                                </li>
+                                            }
+                                        }
+                                    </ul>
+                                    <!--
+                                    =========================================================
+                                    CONTENT SECOND CLASS :: MENU THIRST CLASS
+                                    =========================================================
+                                    -->
+                                    <div class="tab-content tab-space">
+                                        @{
+                                            first = true;
+                                        }
+                                        @foreach (var t in Model.Teams)
+                                        {
+                                            if (first)
+                                            {
+                                                @Html.Partial("_TeamDetail", new Tuple<Team, bool, string>(t, first, Model.Event.username));
+                                                first = false;
+                                            }
+                                            else
+                                            {
+                                                @Html.Partial("_TeamDetail", new Tuple<Team, bool, string>(t, first, Model.Event.username));
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

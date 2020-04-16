@@ -1,0 +1,55 @@
+﻿@model User
+<form class="form" method="" action="">
+    <p class="description text-center">There are your profile</p>
+    <div class="card-body">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="material-icons">face</i>
+                </span>
+            </div>
+            <input style="background-color: transparent;" type="text" class="form-control" placeholder="Username" value="@Model.username" readonly>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="material-icons">contacts</i>
+                </span>
+            </div>
+            <input style="background-color: transparent;" type="text" class="form-control" placeholder="Name" value="@Model.fullName" readonly>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="material-icons">mail_outline</i>
+                </span>
+            </div>
+            <input style="background-color: transparent;" type="text" class="form-control" placeholder="Email" value="@Model.email" readonly>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="material-icons">phonelink_ring</i>
+                </span>
+            </div>
+            <input style="background-color: transparent;" type="text" class="form-control" placeholder="Phone" value="@Model.phone" readonly>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="material-icons">calendar_today</i>
+                </span>
+            </div>
+            <input style="background-color: transparent;" type="date" class="form-control" value="@Model.birthdate" disabled>
+        </div>
+    </div>
+    @if (ViewBag.OtherInf == null)
+    {
+        <div class="footer text-center">
+            <a asp-action="EditProfile" class="btn btn-primary btn-link btn-wd btn-lg">Edit Profile</a>
+        </div>
+        <div class="footer text-center">
+            <a asp-action="ChangePass" class="btn btn-primary btn-link btn-wd btn-lg">Change Password</a>
+        </div>
+    }
+</form>

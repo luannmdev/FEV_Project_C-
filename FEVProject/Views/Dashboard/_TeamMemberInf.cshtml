@@ -1,0 +1,23 @@
+﻿@model Tuple<User, string, string, bool>
+<div class="col-md-4">
+    <div class="team-player">
+        <div class="card card-plain">
+            <div class="col-md-6 ml-auto mr-auto">
+                <img src="/assets/img/fev_dev_avt/BEN00150-2.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+            </div>
+            <h4 class="card-title">
+                @Model.Item1.username
+                <br>
+                <small class="card-description text-muted">Designer</small>
+            </h4>
+            <div class="card-footer justify-content-center">
+                <a asp-action="ViewProfile" asp-route-id="@Model.Item1.username" class="btn btn-primary btn-link btn-wd btn-lg">View Profile</a>
+                @if (Model.Item4)
+                {
+                    <a asp-action="DeleteMember" asp-route-id="@Model.Item1.username" asp-route-option="@Model.Item2" asp-route-pointer="@Model.Item3"
+                       style="border: solid #ba68c8 1px" class="btn btn-primary btn-link btn-wd btn-lg">REMOVE</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

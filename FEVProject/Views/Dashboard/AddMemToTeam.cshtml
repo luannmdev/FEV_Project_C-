@@ -1,0 +1,65 @@
+﻿@model Tuple<ICollection<User>, int, int>
+@{ 
+    Layout = "_Layout";
+    ViewData["Title"] = "Add";
+}
+<div class="main main-raised">
+    <div class="profile-content">
+        <div class="container">
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="profile">
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto">
+                            <p class="description text-center">Add Member to Team</p>
+                            <form class="form" method="post" asp-action="SearchAddMemToTeam">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-5 col-sm-offset-3 mr-auto ml-auto">
+                                            <div id="imaginary_container">
+                                                <div class="input-group stylish-input-group">
+                                                    <input name="search" type="text" class="form-control" placeholder="Search">
+                                                    <input name="id" type="hidden" value="@Model.Item2" />
+                                                    <span class="input-group-addon">
+                                                        <button type="submit">
+                                                            <span class="glyphicon glyphicon-search"><i class="material-icons">search</i></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 ml-auto mr-auto">
+                                            <div class="table-responsive-xl">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">#</th>
+                                                            <th class="text-left">User</th>
+                                                            <th class="text-center">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @{
+                                                            int count = 0;
+                                                        }
+                                                        @foreach (var p in Model.Item1)
+                                                        {
+                                                            count++;
+                                                            @Html.Partial("_AddTeamMemRow", new Tuple<User, int, int>(p, count, Model.Item2))
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                                <div class="footer text-center">
+                                                    <a asp-action="EventDetail" asp-route-id="@Model.Item3" class="btn btn-primary btn-link btn-wd btn-lg">Back</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
